@@ -41,10 +41,6 @@
 └── 🖼️ Lazy Loading (Intersection Observer API)，优化图片加载性能
 ```
 
-```result
-
-```
-
 ## 📂 项目结构
 
 ```bash
