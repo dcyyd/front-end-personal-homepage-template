@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="个人主页，提供一站式快捷入口，展示技术技能与项目，涵盖前端开发、全栈工程、摄影分享等领域。">
+    <meta name="keywords" content="个人主页, 前端开发, 全栈工程师, JavaScript, PHP, 技术博客, 摄影作品, 开源项目, 资源分享, 编程技巧">
+    <meta name="language" content="zh-CN">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="个人主页 | 一站式快捷入口与展示">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./assets/images/logo/logo.jpg" type="image/jpg">
+    <title>个人主页 | 一站式快捷入口与展示</title>
+    <!-- 预加载 CSS -->
+    <link rel="preload" href="./assets/css/main.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- 预加载 JS -->
+    <link rel="preload" href="./assets/js/main.js" as="script">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137340638-1"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="active" title="返回首页">Home</a>
+        <a class="clip"></a>
+        <a href="#about-me" title="查看个人介绍">关于我</a>
+        <a href="#find-me" title="联系与合作">联系我</a>
+        <a href="#involvement-in-projects" title="参与项目">参与项目</a>
+        <a href="#partner-links" title="合作伙伴与友链">友情链接</a>
+        <a class="clip"></a>
+        <a href="#" target="_blank" title="加入交流群">加入我们</a>
+    </nav>
+
+    <div class="background">
+        <canvas id="startrack"></canvas>
+        <div class="cover"></div>
+    </div>
+    <div class="main">
+        <section class="ch intro">
+            <div class="container">
+                <div class="hello">
+                    <h1 id="slogan">思考中...</h1>
+                    <h2>
+                        <span class="circle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="website-title">D.C.Y.</span> | 一站式快捷入口与展示平台
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="ch about" id="about-me">
+            <div class="container">
+                <h2 class="chtitle">Who is <span>[Your Name]</span>？</h2>
+                <div class="clear">
+                    <div class="introduct">
+                        <!-- 图片懒加载 -->
+                        <img class="avatar" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/about-me/avatar.jpg" alt="个人头像" onclick="refreshPage()">
+                        <p>在数字编织的浩瀚宇宙中，编程犹如一位巧手织女，以代码为经纬，精心编织着智慧的锦缎。</p>
+                        <p class="padding-bottom">How lucky to meet you!</p>
+                        <p>Hello，我是 <sup>[Your Name]</sup> ，[年龄]，是 [职业]，对有趣的世界和可能有趣的你感到好奇，热爱 [???] 和
+                            [???]，正在尝试从事[???]相关工作。</p>
+                        <p>希望能与你在比特之海的繁星之下相见！</p>
+                        <div class="chatbox">
+                            <div class="line loading">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="skill clear">
+                        <li>
+                            <p>HTML5/CSS3</p>
+                            <div class="progress">
+                                <div class="progress-bar html-css-skill-level"></div>
+                                <span class="skill-desc">构建精美网页布局与样式</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>JavaScript/Typescript</p>
+                            <div class="progress">
+                                <div class="progress-bar js-ts-skill-level"></div>
+                                <span class="skill-desc">实现网页交互与动态效果</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PHP</p>
+                            <div class="progress">
+                                <div class="progress-bar php-skill-level"></div>
+                                <span class="skill-desc">开发服务器端脚本程序</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Vue/Node.js</p>
+                            <div class="progress">
+                                <div class="progress-bar node-vue-skill-level"></div>
+                                <span class="skill-desc">构建高效前端与后端应用</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Python</p>
+                            <div class="progress">
+                                <div class="progress-bar python-skill-level"></div>
+                                <span class="skill-desc">用于数据处理与自动化脚本</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Git</p>
+                            <div class="progress">
+                                <div class="progress-bar git-skill-level"></div>
+                                <span class="skill-desc">管理项目代码版本</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Linux</p>
+                            <div class="progress">
+                                <div class="progress-bar linux-skill-level"></div>
+                                <span class="skill-desc">搭建与管理服务器环境</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>React</p>
+                            <div class="progress">
+                                <div class="progress-bar react-skill-level"></div>
+                                <span class="skill-desc">创建高性能前端用户界面</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>JAVA/SSM</p>
+                            <div class="progress">
+                                <div class="progress-bar java-ssm-skill-level"></div>
+                                <span class="skill-desc">开发企业级后端应用系统</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>MySQL/Mongodb</p>
+                            <div class="progress">
+                                <div class="progress-bar mysql-mongodb-skill-level"></div>
+                                <span class="skill-desc">存储与管理结构化与非结构化数据</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>大数据分析</p>
+                            <div class="progress">
+                                <div class="progress-bar big-data-skill-level"></div>
+                                <span class="skill-desc">挖掘数据价值与规律</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PPT设计</p>
+                            <div class="progress">
+                                <div class="progress-bar ppt-skill-level"></div>
+                                <span class="skill-desc">制作专业演示文档</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="find ch" id="find-me">
+            <div class="container links">
+                <h2 class="chtitle"><span>Contact</span> me</h2>
+                <div class="clear col-3">
+                    <a href="#" target="_blank" title="访问 GitHub 开源项目">
+                        <div class="item">
+                            <div class="bg github-bg"></div>
+                            <div class="inner">
+                                <span><b>Github</b></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="访问 Gitee 开源项目">
+                        <div class="item">
+                            <div class="bg gitee-bg"></div>
+                            <div class="inner">
+                                <span><b>Gitee</b></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="个人博客">
+                        <div class="item">
+                            <div class="bg blog-bg"></div>
+                            <div class="inner">
+                                <span><b>Blog</b></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear">
+                    <a href="mailto:your_email@example.com" target="_blank" title="邮箱联系">
+                        <div class="item">
+                            <div class="bg mail-bg"></div>
+                            <div class="inner">
+                                <i class="icon-mail"></i>
+                                <span>Mail</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="QQ 联系">
+                        <div class="item">
+                            <div class="bg qq-bg"></div>
+                            <div class="inner">
+                                <i class="icon-qq"></i>
+                                <span>QQ</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="CSDN 主页">
+                        <div class="item">
+                            <div class="bg csdn-bg"></div>
+                            <div class="inner">
+                                <i class="icon-csdn"></i>
+                                <span>CSDN</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="小红书主页">
+                        <div class="item">
+                            <div class="bg red-bg"></div>
+                            <div class="inner">
+                                <i class="icon-Red"></i>
+                                <span>小红书</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="500px 主页">
+                        <div class="item">
+                            <div class="bg five-hundred-px-bg"></div>
+                            <div class="inner">
+                                <i class="icon-500px"></i>
+                                <span>500px</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gate ch" id="involvement-in-projects">
+            <div class="container links">
+                <h2 class="chtitle">Involvement in <span>projects</span></h2>
+                <div class="clear">
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/sites-under/site.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item akarin">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/sites-under/site.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/sites-under/site.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item akarin">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/sites-under/site.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/sites-under/site.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gate ch" id="partner-links">
+            <div class="container links">
+                <h2 class="chtitle">My <span>friend links</span></h2>
+                <div class="clear">
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/friendly-links/friendly.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" title="XXX">
+                        <div class="item">
+                            <!-- 图片懒加载 -->
+                            <div class="avatar">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./assets/images/friendly-links/friendly.jpg" alt="XXX">
+                            </div>
+                            <div class="inner">
+                                <h5>Site Title</h5>
+                                <p>Descriptive Information</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer ch">
+                <div class="container">
+                    <h3>D.C.Y.</h3>
+                    <p class="c">本站由<a href="#" target="_blank" class="footer" title="XXX"> XXX </a>提供技术支持, 遵循<a
+                            href="https://example.com" target="_blank" class="footer" title="XXX 许可证详情"> XXX </a>许可协议
+                    </p>
+                    <p class="c">
+                        &copy; 2024 - 2025 <a href="mailto:your_email@example.com" target="_blank" class="footer"
+                            title="发送邮件">your_email@example.com</a>, 版权所有
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyImages = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            lazyImages.forEach((image) => {
+                imageObserver.observe(image);
+            });
+        });
+    </script>
+    <script src="./assets/js/main.js" charset="UTF-8" defer></script>
+</body>
+
+</html>    
