@@ -15,7 +15,7 @@
 - 📊 技能矩阵可视化展示
 - 🌐 SEO 优化（Schema.org 结构化数据）
 
-[**在线演示**：https://dcyyd.github.io/front-end-personal-homepage-template](https://dcyyd.github.io/front-end-personal-homepage-template)
+**在线预览**：[https://dcyyd.github.io/front-end-personal-homepage-template](https://dcyyd.github.io/front-end-personal-homepage-template)
 
 ## ✨ 核心特性
 
@@ -83,8 +83,8 @@ start index.html
 
 ## 📞 技术支持
 
-📮 **联系维护者**：[dcyyd_kcug@yeah.net](mailto:dcyyd_kcug@yeah.net)
-🐙 **GitHub 主页**：[https://github.com/dcyyd](https://github.com/dcyyd)/
+- 📮 **联系维护者**：[dcyyd_kcug@yeah.net](mailto:dcyyd_kcug@yeah.net)
+- 🐙 **GitHub 主页**：[https://github.com/dcyyd](https://github.com/dcyyd)/
 
 ## 📜 许可证
 
